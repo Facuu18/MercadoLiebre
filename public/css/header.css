@@ -1,0 +1,42 @@
+header{
+    background-color: var(--Amarillo);
+    padding: 20px 0;
+}
+header .logo,header .searchBar{
+    margin: 0px 20px ;
+}
+header .logo img{
+    width: 50%;
+}
+header .searchBar{
+    margin-top: 20px;
+} 
+header .searchBar i{
+    padding: 1px;
+} 
+header  p{
+    margin: 24px 0;
+    text-align: center;
+}
+header ul{
+    margin: 0 0 20px;
+    font-family: var(--FuentePrincipal);
+    text-align: left;
+    font-size: 12px;
+}
+header .burger-menu{
+    text-align: center;
+}
+header .burger-menu i{
+    background-color: var(--Celeste);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+header p{
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--FuentePrincipal);
+}

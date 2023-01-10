@@ -1,0 +1,17 @@
+
+/* main .banner{
+    display: none;
+} */
+
+main .banner img{
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+main section .producto{
+    width: 100%;
+}
+
+main section .precio{
+    color: var(--Verde);
+}

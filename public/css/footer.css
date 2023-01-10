@@ -1,0 +1,40 @@
+
+footer {
+    padding-top: 40px;
+    background-color: white;
+}
+
+footer article {
+    margin-bottom: 40px;
+}
+
+footer article.footer-article {
+    text-align: center;
+}
+
+footer article.footer-article i {
+    color: var(--Celeste);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+footer article.footer-article i:hover {
+    color: #4d79bb;
+}
+
+footer article.footer-article h3 {
+    font-size: 16px;
+}
+
+footer article.footer-article p {
+    font-size: 12px;
+    width: 77%;
+    margin: 0 auto;
+    color: var(--GrisOscuro)
+}
+
+footer p {
+    color: var(--GrisOscuro);
+    font-size: 12px;
+    margin: 0 0 10px 15px;
+}
