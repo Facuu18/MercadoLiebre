@@ -1,7 +1,15 @@
 
-/* main .banner{
-    display: none;
-} */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .banner{
+    position: relative;
+    width: 111.5%;
+    left: -6%;
+}
 
 main .banner img{
     width: 100%;
@@ -12,6 +20,71 @@ main section .producto{
     width: 100%;
 }
 
-main section .precio{
+main section article{
+    background-color: white;
+    margin-bottom: 10px;
+}
+main h3, main h2{
+    font-size: 24px;
+    color: var(--GrisOscuro);
+    padding: 20px 5px 10px;
+}
+main section article h3{
+    color: var(--GrisOscuro);
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+main section article .card-content {
+    border-top: 1px solid var(--GrisClaro);
+    padding: 15px;
+    position: relative;
+}
+
+
+main section article .card-content .icon-truck {
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    width: fit-content;
+    width: -moz-fit-content; 
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+
+main section article .card-content .icon-truck i {
     color: var(--Verde);
+    font-size: 16px;
+}
+
+main section article .card-content .icon-truck i:hover{
+    transform: rotate(-90deg);
+    transition: 1.2s ;
+}
+
+main section article.card-content .product-info p:nth-child(1){
+    flex-grow: 0.05;
+}
+
+main section article .card-content .product-info p:nth-child(2){
+    color: var(--Verde);
+    font-size: 14px; 
+}
+
+/* Tablet */
+@media (min-width:461px) {
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    } 
+    main section article h5{
+        display: block;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:769px) {
+
 }

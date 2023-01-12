@@ -40,3 +40,24 @@ header p{
     font-size: 12px;
     font-family: var(--FuentePrincipal);
 }
+
+header nav{
+    display: none;
+}
+
+/* Tablet */
+@media (min-width:461px) {
+
+    header nav{
+        display: block;
+    }
+    header .burger-menu{
+        display: none;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:769px) {
+
+}
