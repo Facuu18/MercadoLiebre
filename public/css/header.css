@@ -17,17 +17,20 @@ header section.searchBar {
 
 header section.searchBar input {
     background-color: white;
+    border: none;
     width: 85%;
     font-size: 13px;
-    padding: 5px 7px;
+    padding: 10px;
     border-radius: 5px;
-    border: none;
+    outline: none;
 }
 
 header section.searchBar button {
     border-radius: 5px;
     border: none;
-    padding: 4px 5px;
+    padding: 10px;
+    margin-left: -20px;
+    background-color: white;
 }
 
 header .searchBar {
@@ -38,6 +41,7 @@ header .searchBar {
 
 header .searchBar i {
     padding: 1px;
+    color: var(--GrisOscuro);
 }
 
 header p {

@@ -1,0 +1,32 @@
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 20px auto;
+}
+
+.form-login input, 
+.form-login button{
+    margin: 25px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.form-login button {
+    background-color: var(--Celeste);
+    color: white;
+    font-weight: bold;
+}
+
+.form-login button:hover {
+    background-color: #0022AA;
+}
+
+
+
+.form-login button a {
+    color: white;
+}

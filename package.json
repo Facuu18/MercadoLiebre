@@ -8,7 +8,7 @@
     "watch": "nodemon --ext js,html --ignore public"
   },
   "keywords": [],
-  "author": "",
+  "author": "Facundo Olave",
   "license": "ISC",
   "dependencies": {
     "connect-livereload": "^0.6.1",
