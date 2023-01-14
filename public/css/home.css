@@ -1,39 +1,50 @@
-
-
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
 
-main .banner{
+main .banner {
     position: relative;
     width: 111.5%;
     left: -6%;
 }
 
-main .banner img{
+main .banner img {
     width: 100%;
     margin-bottom: 12px;
 }
 
-main section .producto{
+main section {
+    padding-bottom: 40px;
+}
+
+main section .producto {
     width: 100%;
 }
 
-main section article{
+main section article {
     background-color: white;
     margin-bottom: 10px;
 }
-main h3, main h2{
+
+main h3,
+main h2 {
     font-size: 24px;
     color: var(--GrisOscuro);
     padding: 20px 5px 10px;
 }
-main section article h3{
+
+main section article h3 {
     color: var(--GrisOscuro);
     font-size: 16px;
     margin-top: 20px;
     padding: 0;
+}
+
+main section .titulo {
+    font-size: 1.3rem;
+    padding: 5px 0 15px;
+    width: 100%;
 }
 
 main section article .card-content {
@@ -47,7 +58,7 @@ main section article .card-content .icon-truck {
     border: 1px solid var(--Verde);
     border-radius: 50%;
     width: fit-content;
-    width: -moz-fit-content; 
+    width: -moz-fit-content;
     padding: 5px;
     position: absolute;
     top: -15px;
@@ -59,27 +70,53 @@ main section article .card-content .icon-truck i {
     font-size: 16px;
 }
 
-main section article .card-content .icon-truck i:hover{
+main section article .card-content .icon-truck i:hover {
     transform: rotate(-90deg);
-    transition: 1.2s ;
+    transition: 1.2s;
 }
 
-main section article.card-content .product-info p:nth-child(1){
+main section article .card-content .precio {
+    width: 70%;
+    display: inline;
     flex-grow: 0.05;
+    font-size: 18px;
 }
 
-main section article .card-content .product-info p:nth-child(2){
+main section article .card-content .descuento {
+    width: 30%;
+    display: inline;
     color: var(--Verde);
-    font-size: 14px; 
+    font-size: 16px;
+}
+
+main section article .card-content h3.descripcion {
+    padding-top: 20px;
+    margin: 20px 0;
 }
 
 /* Tablet */
 @media (min-width:461px) {
-    main section article{
+    main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100)
-    } 
-    main section article h5{
+    }
+
+    main section article h5 {
         display: block;
+    }
+
+    main section.products-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section article {
+        width: 44%;
+        margin: 0.5rem;
+    }
+
+    main section .titulo {
+        margin-left: 5px;
     }
 
 }
@@ -87,4 +124,13 @@ main section article .card-content .product-info p:nth-child(2){
 /* Desktop */
 @media (min-width:769px) {
 
+
+    main section article {
+        width: 22%;
+    }
+
+    p.descuento,
+    h3.descripcion {
+        font-size: 1rem;
+    }
 }

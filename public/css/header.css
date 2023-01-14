@@ -1,57 +1,136 @@
-header{
+header {
     background-color: var(--Amarillo);
-    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-header .logo,header .searchBar{
-    margin: 0px 20px ;
-}
-header .logo img{
+
+header div.logo {
     width: 50%;
+    padding: 20px;
 }
-header .searchBar{
+
+header section.searchBar {
+    width: 50%;
+    margin: auto 0;
+}
+
+header section.searchBar input {
+    background-color: white;
+    width: 85%;
+    font-size: 13px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    border: none;
+}
+
+header section.searchBar button {
+    border-radius: 5px;
+    border: none;
+    padding: 4px 5px;
+}
+
+header .searchBar {
     margin-top: 20px;
-} 
-header .searchBar i{
-    padding: 1px;
-} 
-header  p{
-    margin: 24px 0;
-    text-align: center;
+    width: 50%;
+    margin: auto 0;
 }
-header ul{
+
+header .searchBar i {
+    padding: 1px;
+}
+
+header p {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--FuentePrincipal);
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
     margin: 0 0 20px;
     font-family: var(--FuentePrincipal);
     text-align: left;
     font-size: 12px;
+    list-style: none;
+    display: none;
 }
-header .burger-menu{
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+header nav ul li a i {
+    margin-left: 5px;
+}
+
+header div.burger-menu {
     text-align: center;
+    font-size: 14px;
+    margin: 20px 0 20px;
+    width: 100%;
 }
-header .burger-menu i{
+
+header .burger-menu i {
     background-color: var(--Celeste);
     color: white;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-header p{
+    border-radius: 4px;
     text-align: center;
-    font-size: 12px;
-    font-family: var(--FuentePrincipal);
-}
+    font-size: 14px;
+    border: solid 6px var(--Celeste);
 
-header nav{
-    display: none;
 }
 
 /* Tablet */
 @media (min-width:461px) {
 
-    header nav{
-        display: block;
+    header div.logo {
+        width: 33%;
+        padding: 30px 20px;
     }
-    header .burger-menu{
+
+    header section.searchBar {
+        width: 33%;
+    }
+
+    header p {
+        width: 33%;
+        margin: auto 0;
+        font-size: 13px;
+        text-align: start;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    header nav ul.products {
+        justify-content: start;
+    }
+
+    header nav ul.users {
+        justify-content: end;
+    }
+
+    header nav ul li {
+        padding: 0 15px;
+    }
+
+    header .burger-menu {
         display: none;
     }
 
@@ -59,5 +138,26 @@ header nav{
 
 /* Desktop */
 @media (min-width:769px) {
+    header div.logo {
+        width: 40%;
+    }
+
+    header section.searchBar {
+        width: 30%;
+    }
+
+    header p {
+        width: 30%;
+        font-size: 13px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+    }
+
 
 }
